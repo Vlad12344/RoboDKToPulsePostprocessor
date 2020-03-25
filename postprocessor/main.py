@@ -1,8 +1,8 @@
-from argsParser import arguments
-from postprocessor.programParser import program_parser, read_file
-from postprocessor.RobodkUR2Pulse import Postprocessor
+from .argsParser import arguments
+from .converter.programParser import program_parser, read_file
+from .converter.RobodkUR2Pulse import Postprocessor
 
-if __name__ == "__main__":
+def main() -> None:
     args = arguments.parse_args()
 
     postprocessor = Postprocessor(robothost=args.host_name)

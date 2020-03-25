@@ -1,6 +1,6 @@
 import time
 from pulseapi import *
-robot = RobotPulse('192.168')
+robot = RobotPulse('127.0.0.1:8081')
 
 speed_ms = 0.3
 speed_ms = 1.0

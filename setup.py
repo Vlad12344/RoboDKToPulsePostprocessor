@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 here = os.path.abspath(os.path.dirname(__file__))
 
-VERSION = '0.1.6'
+VERSION = '0.2.5'
 NAME = 'URToPulseConverter'
 AUTHOR = 'Ostapets Vladislav'
 AUTHOR_EMAIL = 'vlad12344444@gmail.com'
@@ -12,8 +12,7 @@ DESCRIPTION = "UR Robot script -> 'Rozum Robotics' Pulse Robots code converter "
 PACKAGES = [
     'postprocessor',
     'processedPrograms',
-    'RoboDKPrograms',
-    'screenshots'
+    'postprocessor\converter'
 ]
 REQUIRED = [
     'numpy==1.18.0'
@@ -44,8 +43,7 @@ setup(
     install_requires=REQUIRED,
     entry_points={
         "console_scripts": [
-            "URToPulse=main"
+            "URToPulse=postprocessor.main:main"
         ]
     }
-
 )

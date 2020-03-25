@@ -27,7 +27,7 @@ Pulse program program name
 
 Path to the original program generated from Universal_Robots.py postprocessor
 
-    "-i", "--initial_program", default="RoboDKPrograms/Path.txt", help="program name"
+    "-i", "--initial_program", help="program name"
 
 Pulse robot IP, port
 
@@ -35,6 +35,6 @@ Pulse robot IP, port
 
 ## Launch
 
-    python main.py -o='192.168.1.33:8081' -i='RoboDKPrograms/Path1.script'
+    URToPulse -o='192.168.1.33:8081' -i='RoboDKPrograms/Path1.script'
 
     >>> SAVED: processedPrograms\path.py

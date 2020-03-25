@@ -1,8 +1,6 @@
 *.pyc
-\post
-\otherFiles
+dist
+build
 \__pycache__
-mat.cpython-37.pyc
-\dist
-\build
 URToPulseConverter.egg-info
+mat.cpython-37.pyc
